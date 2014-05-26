@@ -123,6 +123,11 @@ ngx.exec(ngx.var.request_uri)
 
 	如果你关心不再使用的图片尺寸缓存消耗了太多空间，你可以考虑创建一个系统删除不再使用的缓存条目。
    
+   
+   
+最后，由于image server经常会跟java web联合调用，所以DataEncryptUtil.java是java
+签名生成文件。
+   
 
 
 
