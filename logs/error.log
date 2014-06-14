@@ -1,0 +1,3 @@
+2014/06/14 20:33:13 [emerg] 12689#0: unexpected "}" in /home/rodsong/GitHub/Image-server-OpenResty/nginx.conf:25
+2014/06/14 21:00:53 [emerg] 13328#0: unexpected "}" in /home/rodsong/GitHub/Image-server-OpenResty/nginx.conf:32
+2014/06/14 21:01:27 [emerg] 13352#0: unexpected "}" in /home/rodsong/GitHub/Image-server-OpenResty/nginx.conf:32

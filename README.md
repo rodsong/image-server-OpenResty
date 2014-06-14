@@ -98,7 +98,7 @@ ngx.exec(ngx.var.request_uri)
       content_by_lua_file "gen_url.lua";
      }
 7），运行服务
-	在启动服务前，你需要方式一些图片到images目录。
+	在启动服务前，你需要放置一些图片到images目录。
 
 	在运行下面这些命令行前，我们需要进入到想要运行服务的目录里面。
 	创建目录：
@@ -107,7 +107,9 @@ ngx.exec(ngx.var.request_uri)
 	$mkdir logs
 	$touch logs/error.log
 	开始启动服务
-        sudo $/usr/local/openresty/nginx/sbin/nginx -p “$(pwd)” -c “nginx.conf”
+        $ >sudo /usr/local/openresty/nginx/sbin/nginx -p “$(pwd)” -c “nginx.conf”
+
+        例如:~/GitHub/Image-server-OpenResty$ sudo /usr/local/openresty/nginx/sbin/nginx -p ./ -c nginx.conf 
 
 	假设服务已经开始，我们现在访问服务。举个例子，如果你有一个图片 leafo.jpg 你可以重定义大小通过下面这个URL http://localhost/images/LMzEhc_nPYwX/80×80/leafo.jpg
 
@@ -122,9 +124,7 @@ ngx.exec(ngx.var.request_uri)
 	如果你使用另一个Web应用程序来跑图片服务，你需要在你的应用内部写calculate_signature函数用来产生验证URLs.
 
 	如果你关心不再使用的图片尺寸缓存消耗了太多空间，你可以考虑创建一个系统删除不再使用的缓存条目。
-   
-   
-   
+
 最后，由于image server经常会跟java web联合调用，所以DataEncryptUtil.java是java
 签名生成文件。
    
