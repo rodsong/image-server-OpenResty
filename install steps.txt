@@ -1,0 +1,46 @@
+1. 解压 ngx_openresty-1.7.4.1.tar.gz
+
+2. cd ngx_openresty-1.7.4.1/
+    执行
+    $ ./configure --with-luajit (看到 type the following commands to build and install 表示配置成功)
+	$ make 
+	$ make install
+	
+    因为环境各异，可能会缺少一下系统lib，根据提示安装需要的lib。
+	你可能需要安装
+	sudo apt-get update
+	sudo apt-get install openssl
+    如果已安装执行以下操作：
+    sudo apt-get install libssl-dev
+     sudo apt-get install libssl0.9.8
+    Ubuntu 下安装 GTK+ 开发库
+    sudo apt-get install libgtk2.0-dev
+	
+3. 解压 image-server-OpenResty-master.zip
+   cd image-server-OpenResty-master\
+   运行sh start.sh
+   
+   then test this image sever as following steps.
+   
+   http://localhost:8080/gen/200x200/leafo.jpg 将会得到 一个返回值例如 images/ajycOFftuYtC/200x200/leafo.jpg
+   
+   继续访问  http://localhost:8080/images/ajycOFftuYtC/200x200/leafo.jpg
+   如果成功则说明图片服务器搭建成功。
+   如果失败查看错误日志
+   
+   你可能没有安装ImageMagick 模块。
+4. 安装ImageMagick
+
+   sudo apt-get install imagemagick
+   
+   遇到没有magickwand依赖的情况
+   
+   sudo apt-get install libmagickwand-dev
+   
+   
+5. 使用格式
+   ip:port/images/<签名>/<长>x<宽>/<图片名称及路径>
+   例如：
+   http://localhost:8080/images/UMpPTR3HhX0g/200x200/test.jpg
+   
+   
