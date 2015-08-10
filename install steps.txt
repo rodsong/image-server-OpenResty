@@ -1,46 +1,46 @@
-1. ½âÑ¹ ngx_openresty-1.7.4.1.tar.gz
+1. è§£å‹ ngx_openresty-1.7.4.1.tar.gz
 
 2. cd ngx_openresty-1.7.4.1/
-    Ö´ĞĞ
-    $ ./configure --with-luajit (¿´µ½ type the following commands to build and install ±íÊ¾ÅäÖÃ³É¹¦)
+    æ‰§è¡Œ
+    $ ./configure --with-luajit (çœ‹åˆ° type the following commands to build and install è¡¨ç¤ºé…ç½®æˆåŠŸ)
 	$ make 
 	$ make install
 	
-    ÒòÎª»·¾³¸÷Òì£¬¿ÉÄÜ»áÈ±ÉÙÒ»ÏÂÏµÍ³lib£¬¸ù¾İÌáÊ¾°²×°ĞèÒªµÄlib¡£
-	Äã¿ÉÄÜĞèÒª°²×°
+    å› ä¸ºç¯å¢ƒå„å¼‚ï¼Œå¯èƒ½ä¼šç¼ºå°‘ä¸€äº›ç³»ç»Ÿlibï¼Œæ ¹æ®æç¤ºå®‰è£…éœ€è¦çš„libã€‚
+	ä½ å¯èƒ½éœ€è¦å®‰è£…
 	sudo apt-get update
 	sudo apt-get install openssl
-    Èç¹ûÒÑ°²×°Ö´ĞĞÒÔÏÂ²Ù×÷£º
+    å¦‚æœå·²å®‰è£…æ‰§è¡Œä»¥ä¸‹æ“ä½œï¼š
     sudo apt-get install libssl-dev
      sudo apt-get install libssl0.9.8
-    Ubuntu ÏÂ°²×° GTK+ ¿ª·¢¿â
+    Ubuntu ä¸‹å®‰è£… GTK+ å¼€å‘åº“
     sudo apt-get install libgtk2.0-dev
 	
-3. ½âÑ¹ image-server-OpenResty-master.zip
+3. è§£å‹ image-server-OpenResty-master.zip
    cd image-server-OpenResty-master\
-   ÔËĞĞsh start.sh
+   è¿è¡Œsh start.sh
    
    then test this image sever as following steps.
    
-   http://localhost:8080/gen/200x200/leafo.jpg ½«»áµÃµ½ Ò»¸ö·µ»ØÖµÀıÈç images/ajycOFftuYtC/200x200/leafo.jpg
+   http://localhost:8080/gen/200x200/leafo.jpg å°†ä¼šå¾—åˆ° ä¸€ä¸ªè¿”å›å€¼ä¾‹å¦‚ images/ajycOFftuYtC/200x200/leafo.jpg
    
-   ¼ÌĞø·ÃÎÊ  http://localhost:8080/images/ajycOFftuYtC/200x200/leafo.jpg
-   Èç¹û³É¹¦ÔòËµÃ÷Í¼Æ¬·şÎñÆ÷´î½¨³É¹¦¡£
-   Èç¹ûÊ§°Ü²é¿´´íÎóÈÕÖ¾
+   ç»§ç»­è®¿é—®  http://localhost:8080/images/ajycOFftuYtC/200x200/leafo.jpg
+   å¦‚æœæˆåŠŸåˆ™è¯´æ˜å›¾ç‰‡æœåŠ¡å™¨æ­å»ºæˆåŠŸã€‚
+   å¦‚æœå¤±è´¥æŸ¥çœ‹é”™è¯¯æ—¥å¿—
    
-   Äã¿ÉÄÜÃ»ÓĞ°²×°ImageMagick Ä£¿é¡£
-4. °²×°ImageMagick
+   ä½ å¯èƒ½æ²¡æœ‰å®‰è£…ImageMagick æ¨¡å—ã€‚
+4. å®‰è£…ImageMagick
 
    sudo apt-get install imagemagick
    
-   Óöµ½Ã»ÓĞmagickwandÒÀÀµµÄÇé¿ö
+   é‡åˆ°æ²¡æœ‰magickwandä¾èµ–çš„æƒ…å†µ
    
    sudo apt-get install libmagickwand-dev
    
    
-5. Ê¹ÓÃ¸ñÊ½
-   ip:port/images/<Ç©Ãû>/<³¤>x<¿í>/<Í¼Æ¬Ãû³Æ¼°Â·¾¶>
-   ÀıÈç£º
+5. ä½¿ç”¨æ ¼å¼
+   ip:port/images/<ç­¾å>/<é•¿>x<å®½>/<å›¾ç‰‡åç§°åŠè·¯å¾„>
+   ä¾‹å¦‚ï¼š
    http://localhost:8080/images/UMpPTR3HhX0g/200x200/test.jpg
    
    
