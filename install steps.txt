@@ -16,8 +16,19 @@
     Ubuntu 下安装 GTK+ 开发库
     sudo apt-get install libgtk2.0-dev
 	
-3. 解压 image-server-OpenResty-master.zip
-   cd image-server-OpenResty-master\
+3. 安装ImageMagick
+
+   sudo apt-get install imagemagick
+   
+   遇到没有magickwand依赖的情况
+   
+   sudo apt-get install libmagickwand-dev
+	
+4. 解压 image-server.tar
+   cd image-server-OpenResty
+   
+   根据自己系统的环境配置一个合适的images的存放路径
+   
    运行sh start.sh
    
    then test this image sever as following steps.
@@ -29,13 +40,7 @@
    如果失败查看错误日志
    
    你可能没有安装ImageMagick 模块。
-4. 安装ImageMagick
 
-   sudo apt-get install imagemagick
-   
-   遇到没有magickwand依赖的情况
-   
-   sudo apt-get install libmagickwand-dev
    
    
 5. 使用格式
